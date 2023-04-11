@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/henrikswoon/static/css/main.073c9b0a.css",
+    "main.js": "/henrikswoon/static/js/main.bd63e63a.js",
+    "static/js/787.eb70a2f3.chunk.js": "/henrikswoon/static/js/787.eb70a2f3.chunk.js",
+    "static/media/logo.svg": "/henrikswoon/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/henrikswoon/index.html",
+    "main.073c9b0a.css.map": "/henrikswoon/static/css/main.073c9b0a.css.map",
+    "main.bd63e63a.js.map": "/henrikswoon/static/js/main.bd63e63a.js.map",
+    "787.eb70a2f3.chunk.js.map": "/henrikswoon/static/js/787.eb70a2f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.bd63e63a.js"
+  ]
+}
