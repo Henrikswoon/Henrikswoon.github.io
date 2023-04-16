@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-family: "Inter", monospace;
+  font-size: 5vmin;
+  color: whitesmoke;
+}
