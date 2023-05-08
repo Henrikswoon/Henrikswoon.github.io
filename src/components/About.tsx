@@ -1,5 +1,6 @@
 import React from "react"
 import {Routes, Route, Link} from "react-router-dom";
+import headshot from '../resources/boy.jpg';
 import Contact from "../pages/Contact";
 
 export default function About() {
@@ -10,11 +11,11 @@ export default function About() {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Melker Henriksson.
           </h1>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:w-48 border-solid border-1 border-white">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover aspect-square object-center rounded border-solid border-2 border-white border-opacity-10"
             alt="hero"//Byt ut med loading gif?
-            src="./coding.svg"
+            src={headshot}
           />
         </div>
           <p className="mb-8 leading-relaxed">

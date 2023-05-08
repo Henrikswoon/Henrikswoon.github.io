@@ -1,18 +1,44 @@
 import React from 'react';
-import logoReact from './logo_React.svg';
-import logoTS from './logo_TS.svg';
-import './App.css';
 
-function App() {
+//Components
+import About from './components/About';
+import RootLayout from './layouts/rootLayout';
+import './App.css';
+import{
+  createBrowserRouter,
+  Routes,
+  Route,
+  Link,
+  NavLink,
+  createRoutesFromElements
+} from 'react-router-dom'
+
+declare namespace JSX {
+  interface IntrinsicElements {
+    [elemName: string]: any;
+  }
+}
+
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+      <Route path='About' element={<About/>} />
+    </Route>
+  )
+);
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logoReact} className="App-logo react" alt="logo" />
-        <img src={logoTS} className="App-logo ts" alt="logo" />
-        <h1>Portfolio Melker Henriksson</h1>
-      </header>
-    </div>
+    <main className='text-gray-400 bg-gray-900 body-font'>
+      <About/>
+    </main>
   );
+
 }
 
 export default App;
