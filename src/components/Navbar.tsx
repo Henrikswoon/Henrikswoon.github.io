@@ -7,6 +7,11 @@ const Navbar: React.FC = () => {
         <nav> 
             <ul>
                 <li>
+                    <Link to='Projects'>
+                        <h2>Projects</h2>
+                    </Link>
+                </li>
+                <li>
                     <Link to='About' >
                         <h2>About</h2>
                     </Link>
@@ -14,11 +19,6 @@ const Navbar: React.FC = () => {
                 <li>
                     <Link to='Contact'>
                         <h2>Contact</h2>    
-                    </Link>
-                </li>
-                <li>
-                    <Link to='CV'>
-                        <h2>CV</h2>
                     </Link>
                 </li>
             </ul>
