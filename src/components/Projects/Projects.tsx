@@ -1,5 +1,6 @@
 import { ProjectDataType } from './projectData'
 import {icons} from '../../Assets/Logos/index';
+import AnimatedPage from '../AnimatedPage';
 import './projects.css'
 
 interface Props {
@@ -9,17 +10,34 @@ interface Props {
 const Projects: React.FC<Props> = ({ projects }: Props) => {
 
     return(
-        <div>
+        <AnimatedPage>
+            <section>
             {projects.map((project) => (
                 <div key={project.id}>
                     <h2>{project.Title}</h2>
                     <hr/>
                     <div>{project.description}</div>
-                    <div>
+
+                    <ul>
+                        {project.demoUrl &&
+                            <li>
+                                <a href={project.demoUrl}>
+                                    Demo
+                                </a>
+                            </li>
+                        }
+                        {project.sourceCodeUrl &&
+                            <li>
+                                <a href={project.sourceCodeUrl}>
+                                    Source code
+                                </a>
+                            </li>
+                        }
+                    </ul>
+
+                    <div id="technologies">
                         {project.technologies.map((tech) => (
-                            
                             <div>
-                                <h3>{tech.name}</h3>
                                 <img
                                     id="logo"
                                     key={tech.name}
@@ -30,19 +48,10 @@ const Projects: React.FC<Props> = ({ projects }: Props) => {
                             </div>
                         ))}
                     </div>
-                    {project.demoUrl &&
-                    <a href={project.demoUrl}>
-                    {`Klicka här för att besöka demot för ${project.Title}`}
-                    </a>
-                    }
-                    {project.sourceCodeUrl &&
-                    <a href={project.sourceCodeUrl}>
-                    {`Klicka här för att undersöka källkoden för ${project.Title}`}
-                    </a>
-                    }
                 </div>
             ))}
-        </div>
+            </section>
+        </AnimatedPage>
     );
 };
 export default Projects

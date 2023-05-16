@@ -1,6 +1,7 @@
 main{
     min-height: 100%;
     display: grid;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 90% 10%;
     align-items: center;
 }

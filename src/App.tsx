@@ -14,8 +14,8 @@ import RootLayout from './layouts/rootLayout';
 import ErrorPage from './error-page';
 
 //Components
-import About from './components/About';
-import Contact from './pages/Contact';
+import About from './components/About/About';
+import Contact from './components/Contact';
 import Projects from './components/Projects/Projects'
 
 //Props

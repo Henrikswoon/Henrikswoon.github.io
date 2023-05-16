@@ -14,14 +14,14 @@ export type ProjectDataType = {
   export const projectData: ProjectDataType[] = [
     {
       id: 1,
-      Title: 'Min portfolie',
-      description: 'To Do......',
+      Title: 'henrikswoon.github.io',
+      description: 'En faktisk mardröm haha, skriver rapporten sen!', // Skriven i och tolkad som html
       technologies: [
         {name: 'React', icon: 'react'},
         {name: 'TypeScript', icon: 'ts'}
       ],
       image: 'somePath',
       demoUrl: '',
-      sourceCodeUrl: '',
+      sourceCodeUrl: 'https://github.com/Henrikswoon/Henrikswoon.github.io/tree/source',
     },
   ];
